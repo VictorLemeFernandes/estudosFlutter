@@ -30,6 +30,7 @@ class _LoginPageState extends State<LoginPage> {
     final ButtonStyle style = ElevatedButton.styleFrom(
       primary: Colors.yellow,
       onPrimary: Colors.black,
+      
     );
 
     return Scaffold(
@@ -42,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
         width: double.infinity,
         height: double.infinity,
         child: Padding(
-          padding: const EdgeInsets.all(8.5),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -71,11 +72,29 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
 
-              //Button de login
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text('Login'),
-                style: style,
+              //Botoes de login e sign up
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+
+                    //Botao de login
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('Login'),
+                      style: style,
+                    ),
+
+                    //Botao de sign up
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('Sign up'),
+                      style: style,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
