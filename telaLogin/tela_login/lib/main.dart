@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: LoginPage(),
     );
   }
@@ -48,12 +49,20 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              
+              const Center(
+                child: Icon(
+                  Icons.flash_on,
+                  size: 80,
+                  color: Colors.yellow,
+                  
+                ),
+              ),
 
               //TextField do e-mail
               const Padding(
                 padding: EdgeInsets.all(8.0),
                 child: TextField(
-                  obscureText: true,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'E-mail',
@@ -65,6 +74,7 @@ class _LoginPageState extends State<LoginPage> {
               const Padding(
                 padding: EdgeInsets.all(8.0),
                 child: TextField(
+                  obscureText: true, //Faz a senha ficar oculta
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Password',
