@@ -1,4 +1,4 @@
-import 'package:exemplo005/first_page.dart';
+import 'package:exemplo005/views/first_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
