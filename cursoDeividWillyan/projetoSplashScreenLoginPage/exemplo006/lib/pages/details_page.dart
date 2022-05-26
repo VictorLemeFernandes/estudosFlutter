@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:exemplo006/models/post_model.dart';
 import 'package:flutter/material.dart';
 
